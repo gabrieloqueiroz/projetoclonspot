@@ -1,0 +1,202 @@
+
+/*********** LAYOUT  ***************/
+
+html, body, .capa{
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+
+    background: url('../imagens/capa.png'),
+                url('../imagens/ruido.png'),
+                linear-gradient(50deg,#ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif ;
+    overflow-x: hidden;
+}
+
+
+/*********** BARRA DE NAVEGAÇÃO ***********/ 
+
+nav.navbar-transparente{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+    border: none;
+}
+
+.img-logo {
+    height: 40px;
+	width: 132px;
+	display: block;
+	background: url('../imagens/spotify.svg') no-repeat;
+	background-size: contain;
+    color: transparent;
+}
+
+a.navbar-brand{
+	padding: 5px 15px;
+}   
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse ul.navbar-nav>li>a,footer .nav a{
+    color: white;
+}
+
+.navbar-inverse ul.navbar-nav>li>a:hover, #rodape .nav a:hover {
+    color: #9bf0e1;
+    background: none;
+}
+
+/*********** IMAGEM CAPA ***********/ 
+
+.capa {
+   
+    display: table;
+    width: 100%;
+
+}
+
+.texto-capa {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+   
+}
+/*********** BOTOES ***********/
+
+a.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+}
+
+a.btn-roxo{
+    background: #7c25f8;
+}
+
+a.btn-roxo:hover{
+    background-color: #6207e3;
+    color: #fff;
+    
+}
+
+a.btn-branco{
+    border: 2px solid #fff;
+}
+
+a.btn-branco:hover{
+    border: 2px solid #fff;
+    background: #fff;
+    color: #000;
+}
+
+
+
+/*********** TIPOGRAFIA ***********/ 
+
+
+.texto-capa h1 {
+
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+
+#servicos h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #7c25f8;
+}
+
+#servicos h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color:#7c25f8;
+}
+
+#recursos h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    
+}
+
+#recursos h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #9bf0e1;
+}
+
+
+/*********** SEÇÃO SERVICO ***********/ 
+
+#servicos {
+
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.albuns{
+    padding: 10px 0px 10px 0;
+}
+
+#recursos {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+
+}
+
+
+.rotacionar {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/*********** RODAPÉ ***********/ 
+
+footer#rodape{
+    padding: 50px 0px 20px 0px;
+    background: #000;
+    position: relative;
+}
+
+#rodape h4 {
+    color: #919496;
+    font-size: 12px ;
+    text-transform: uppercase;
+}
+
+.item-rede-social{
+    float: right;
+    display: block;
+}
+
+@media screen and (max-width: 767px){
+    .capa .texto-capa h1{
+        font-size: 50px;
+    }
+    a .btn-custom{
+     margin: 10px 15px;
+    }
+    
+}
